@@ -1,0 +1,212 @@
+.exp {
+  display: flex;
+  flex-direction: column;
+  height: 90vh;
+  margin-top: 8rem;
+  color: black;
+}
+
+.exp > :nth-child(1) {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: var(--orange);
+}
+
+.exp-circle {
+  margin-top: 2rem;
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+
+.exp-maincircle {
+  position: relative;
+  width: 20rem;
+  height: 20rem;
+  border-radius: 100%;
+  box-shadow: var(--smboxShadow);
+  top: 2rem;
+  background: white;
+  z-index: 2;
+}
+
+.exp-maincircle > * {
+  position: absolute;
+  text-align: center;
+}
+
+.exp-maincircle > :nth-child(1) {
+  top: -3rem;
+  left: 6rem;
+}
+
+.exp-maincircle > :nth-child(2) {
+  left: -3rem;
+  top: 6rem;
+}
+
+.exp-maincircle > :nth-child(3) {
+  left: 6rem;
+  top: 6rem;
+}
+
+.exp-maincircle > :nth-child(4) {
+  left: 15rem;
+  top: 6rem;
+}
+
+.exp-maincircle > :nth-child(5) {
+  left: 6rem;
+  top: 15rem;
+}
+
+.exp-secCircle {
+  width: 7rem;
+  height: 7rem;
+  position: absolute;
+  border-radius: 100%;
+  border: 5px solid #ebebeb;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: "none";
+  box-shadow: var(--smboxShadow);
+  background: white;
+}
+
+.w-secCircle > span {
+  transform: scale(0.6);
+}
+
+/*Media query for maximum width 480px */
+@media (max-width: 1200px) {
+  .exp {
+    margin-top: 2rem;
+    height: 30rem;
+  }
+}
+
+/*Media query for maximum width 480px */
+/* @media (max-width: 680px) {
+  .contact {
+    margin-top: 5rem;
+  }
+} */
+
+/* Media query for max-width 480px */
+@media (max-width: 480px) {
+  .exp {
+    margin-top: 2rem;
+    height: 25rem;
+  }
+
+  .exp > :nth-child(1) {
+    font-size: 1.8rem;
+  }
+
+  .exp-circle {
+    margin-top: 3rem;
+  }
+
+  .exp-maincircle {
+    width: 15rem;
+    height: 15rem;
+  }
+
+  .exp-maincircle > * {
+    font-size: 12px;
+  }
+
+  .exp-maincircle > :nth-child(1) {
+    top: -2.5rem;
+    left: 5rem;
+  }
+
+  .exp-maincircle > :nth-child(2) {
+    left: -2.5rem;
+    top: 5rem;
+  }
+
+  .exp-maincircle > :nth-child(3) {
+    left: 5rem;
+    top: 5rem;
+  }
+
+  .exp-maincircle > :nth-child(4) {
+    left: 12rem;
+    top: 5rem;
+  }
+
+  .exp-maincircle > :nth-child(5) {
+    left: 5rem;
+    top: 12rem;
+  }
+
+  .exp-secCircle {
+    width: 5rem;
+    height: 5rem;
+  }
+
+  .w-secCircle > span {
+    transform: scale(0.4);
+  }
+}
+
+/* Media query for max-width 380px */
+@media (max-width: 380px) {
+  .exp {
+    margin-top: 2rem;
+    height: 25rem;
+  }
+
+  .exp > :nth-child(1) {
+    font-size: 1.8rem;
+  }
+
+  .exp-circle {
+    margin-top: 3rem;
+  }
+
+  .exp-maincircle {
+    width: 12rem;
+    height: 12rem;
+  }
+
+  .exp-secCircle {
+    width: 3rem;
+    height: 3rem;
+  }
+
+  .exp-maincircle > * {
+    font-size: 7px;
+  }
+
+  .exp-maincircle > :nth-child(1) {
+    top: -1.25rem;
+    left: 4rem;
+  }
+
+  .exp-maincircle > :nth-child(2) {
+    left: -1.25rem;
+    top: 4.5rem;
+  }
+
+  .exp-maincircle > :nth-child(3) {
+    left: 4rem;
+    top: 4.5rem;
+  }
+
+  .exp-maincircle > :nth-child(4) {
+    left: 9.25rem;
+    top: 4.5rem;
+  }
+
+  .exp-maincircle > :nth-child(5) {
+    left: 4rem;
+    top: 10.5rem;
+  }
+
+  .w-secCircle > span {
+    transform: scale(0.4);
+  }
+}

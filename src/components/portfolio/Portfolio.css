@@ -1,0 +1,83 @@
+.portfolio {
+  display: flex;
+  margin-top: 6rem;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.portfolio > :nth-child(1) {
+  font-size: 2rem;
+  font-weight: bold;
+  color: var(--black);
+}
+
+.portfolio > :nth-child(2) {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: var(--orange);
+}
+
+.portfolio-slider {
+  margin-top: 2rem;
+  width: 100%;
+}
+
+.portfolio-slider .swiper-slide {
+  width: 20rem;
+}
+
+.portfolio img {
+  height: 10rem;
+  width: 19rem;
+  filter: drop-shadow(-12px 15px 13px rgba(0, 0, 0, 0.25));
+  border-radius: 19px;
+  position: relative;
+  cursor: pointer;
+}
+
+.project-name{
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 19px;
+  position: absolute;
+  bottom: -100%;
+  z-index: 10;
+  background-color: rgba(255, 255, 255, 0.397);
+  transition: 0.5s;
+  cursor: pointer;
+}
+
+.project-image:hover .project-name{
+  bottom: 0;
+}
+
+/* Media query for maximum width 1200px */
+@media (max-width: 1200px) {
+
+  .portfolio{
+    margin-top: 2rem;
+    height: auto;
+    /* background-color: red; */
+  }
+
+  .project-name {
+    border-radius: 19px;
+    bottom: 0;
+    font-size: small;
+  }
+
+  .portfolio-slider {
+    width: 30rem;
+  }
+}
+
+/* Media query for maximum width 480px */
+@media (max-width: 480px) {
+
+  .portfolio img {
+    height: 6rem;
+  }
+}

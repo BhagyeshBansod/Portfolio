@@ -1,0 +1,123 @@
+.nav-wrapper {
+  height: 10vh;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 2rem;
+}
+
+.nav-left {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: left;
+  gap: 2rem;
+  color: var(--orange);
+}
+
+.nav-name {
+    font-size: 2rem;
+    font-weight: bold;
+  }
+
+.nav-right {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: right;
+    gap: 2rem;
+    z-index: 1;
+  }
+
+.nav-right ul {
+  display: flex;
+  gap: 2rem;
+  list-style-type: none;
+}
+
+.nav-right ul {
+    display: flex;
+    gap: 2rem;
+    list-style-type: none;
+    color: var(--orange);
+  }
+
+.nav-right ul {
+    list-style-type: none;
+    }
+
+  .nav-right li:hover{
+    cursor: pointer;
+    color: var(--darkyellow);
+  }
+
+  
+/* Media query for max-width 480px */
+@media (max-width: 960px) {
+  .nav-right ul {
+    display: none; /* Hide the navigation links */
+  }
+
+  .nav-wrapper {
+    justify-content: space-between;
+  }
+
+  .nav-left {
+    display: flex;
+    align-items: center;
+  }
+
+  .nav-name {
+    font-size: 1.5rem;
+  }
+
+  /* Hamburger menu styles */
+  .nav-hamburger {
+    cursor: pointer;
+    display: block;
+    width: 30px;
+    height: 25px;
+    position: relative;
+  }
+
+  .nav-hamburger span {
+    display: block;
+    position: absolute;
+    height: 3px;
+    width: 100%;
+    background: #333; /* Change the color as needed */
+    border-radius: 3px;
+    opacity: 1;
+    transform: rotate(0);
+    transition: 0.25s ease-in-out;
+  }
+
+  .nav-hamburger span:nth-child(1) {
+    top: 0px;
+  }
+
+  .nav-hamburger span:nth-child(2) {
+    top: 10px;
+  }
+
+  .nav-hamburger span:nth-child(3) {
+    top: 20px;
+  }
+
+  /* Styles to show the navigation links when the hamburger menu is active */
+  .nav-right.show-nav ul {
+    display: flex;
+    flex-direction: column;
+    background-color: #f9f9f9; /* Change the background color as needed */
+    position: absolute;
+    top: 60px; /* Adjust this value as needed to position the menu properly */
+    left: 1%;
+    width: 100%;
+    border: 1px solid #ccc; /* Add borders as needed */
+    padding: 10px;
+    border-radius: 5px;
+  }
+
+  .nav-right.show-nav ul li {
+    margin-bottom: 10px;
+  }
+}

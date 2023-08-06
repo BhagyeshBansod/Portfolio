@@ -1,0 +1,182 @@
+/* Default styles */
+.contact {
+  display: flex;
+  margin-top: 8rem;
+  height: 60vh;
+}
+
+.contact-name {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  height: 40vh;
+  justify-content: center;
+}
+
+.contact-name :nth-child(1) {
+  font-size: 2rem;
+  font-weight: bold;
+  color: var(--black);
+}
+
+.contact-name :nth-child(2) {
+  font-size: 3rem;
+  font-weight: bold;
+  color: var(--orange);
+}
+
+.contact-form {
+  display: flex;
+  align-items: center;
+  flex: 1;
+  width: 100%;
+  position: relative;
+}
+
+.contact-form form {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  align-items: center;
+}
+
+.inputbox .fields {
+  width: 20rem;
+  height: 2rem;
+  padding: 5px 5px 5px 30px;
+  outline: none;
+  border: 2px solid var(--orange);
+  border-radius: 8px;
+  font-size: 16px;
+  background-color: transparent;
+  color: var(--black);
+  transition: 0.5s;
+  outline: none;
+  position: relative;
+}
+
+.inputbox span {
+  position: absolute;
+  left: 3.5%;
+  padding: 5px;
+  color: var(--black);
+  font-size: 20px;
+  pointer-events: none;
+  transition: 0.5s;
+}
+
+.inputbox .fields:valid ~ span,
+.inputbox .fields:focus ~ span {
+  color: var(--orange);
+  transform: translate(10px, -10px);
+  background-color: white;
+  font-size: 15px;
+  font-weight: bold;
+  padding: 0 5px;
+  letter-spacing: 2px;
+  border-left: 2px solid var(--orange);
+  border-right: 2px solid var(--orange);
+}
+
+.inputbox input:valid,
+.inputbox input:focus {
+  border: 2px solid var(--orange);
+  border-radius: 5px;
+}
+
+textarea {
+  height: 4rem !important;
+}
+
+.contact-btn {
+  width: 12rem;
+  height: 2rem;
+  font-size: 30px;
+  z-index: 1;
+}
+
+.inputbox .dark-bg {
+  color: white;
+}
+
+.inputbox .fields:valid ~ .dark-bg,
+.inputbox .fields:focus ~ .dark-bg {
+  background-color: black;
+}
+
+/* Media query for maximum width 1000px */
+@media (max-width: 1200px) {
+  .contact {
+    margin-top: 2rem;
+    height: auto;
+    /* background-color: red; */
+  }
+}
+
+
+/* Media query for maximum width 750px */
+/* @media (max-width: 750px) {
+  .contact {
+    margin-top: 35rem;
+    flex-direction: column;
+    height: auto;
+  }
+} */
+
+/*Media query for maximum width 650px */
+/* @media (max-width: 650px) {
+  .contact {
+    margin-top: 40rem;
+  }
+} */
+
+/*Media query for maximum width 500px */
+/* @media (max-width: 500px) {
+  .contact {
+    margin-top: 45rem;
+  }
+} */
+
+/*Media query for maximum width 480px */
+@media (max-width: 680px) {
+  .contact {
+    margin-top: 2rem;
+    flex-direction: column;
+    gap: 2rem;
+  }
+
+  .contact-name :nth-child(1) {
+    font-size: 1.8rem;
+  }
+
+  .contact-name :nth-child(2) {
+    font-size: 2.8rem;
+  }
+
+  .inputbox .fields {
+    width: 15rem;
+  }
+
+}
+
+/*Media query for maximum width 480px */
+@media (max-width: 380px) {
+  .contact {
+    margin-top: 2rem;
+    flex-direction: column;
+    gap: 2rem;
+  }
+
+  .contact-name :nth-child(1) {
+    font-size: 1rem;
+  }
+
+  .contact-name :nth-child(2) {
+    font-size: 2rem;
+  }
+
+  .inputbox .fields {
+    width: 12rem;
+  }
+
+}

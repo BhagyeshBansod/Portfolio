@@ -1,0 +1,35 @@
+.toggle {
+  height: 1.75rem;
+  width: 3.5rem;
+  border-radius: 50px;
+  background-image: url('../../img/light.jpg');
+  transition: background-image 1s ease-in;
+  background-size: cover;
+  position: relative;
+  cursor: pointer;
+}
+
+.sun {
+    height: 1.4rem;
+    width: 1.4rem;
+    position: absolute;
+    top: 8.5%;
+    left: 4%;
+    box-shadow: 0 0 5px 2px yellowgreen;
+    border-radius: 50%;
+    background-color: yellow;
+    transition: 1s ease;
+}
+
+.night{
+    background-image: url('../../img/dark.jpg');
+    background-size: cover;
+    
+}
+
+.night > .sun{
+    transform: translateX(129%);
+    box-shadow: 0 0 5px 2px whitesmoke;
+    background-color: whitesmoke;
+    
+}
