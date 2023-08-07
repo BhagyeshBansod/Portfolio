@@ -86,13 +86,6 @@
   }
 }
 
-/*Media query for maximum width 480px */
-/* @media (max-width: 680px) {
-  .contact {
-    margin-top: 5rem;
-  }
-} */
-
 /* Media query for max-width 480px */
 @media (max-width: 480px) {
   .exp {
@@ -109,42 +102,42 @@
   }
 
   .exp-maincircle {
-    width: 15rem;
-    height: 15rem;
+    width: 12rem;
+    height: 12rem;
   }
 
   .exp-maincircle > * {
-    font-size: 12px;
+    font-size: 10px;
   }
 
   .exp-maincircle > :nth-child(1) {
-    top: -2.5rem;
-    left: 5rem;
+    top: -1.7rem;
+    left: 4rem;
   }
 
   .exp-maincircle > :nth-child(2) {
-    left: -2.5rem;
-    top: 5rem;
+    left: -1.7rem;
+    top: 4rem;
   }
 
   .exp-maincircle > :nth-child(3) {
-    left: 5rem;
-    top: 5rem;
+    left: 4rem;
+    top: 4rem;
   }
 
   .exp-maincircle > :nth-child(4) {
-    left: 12rem;
-    top: 5rem;
+    left: 9.7rem;
+    top: 4rem;
   }
 
   .exp-maincircle > :nth-child(5) {
-    left: 5rem;
-    top: 12rem;
+    left: 4rem;
+    top: 9.7rem;
   }
 
   .exp-secCircle {
-    width: 5rem;
-    height: 5rem;
+    width: 4rem;
+    height: 4rem;
   }
 
   .w-secCircle > span {
