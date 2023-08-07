@@ -69,7 +69,7 @@
 .inputbox .fields:focus ~ span {
   color: var(--orange);
   transform: translate(10px, -10px);
-  background-color: white;
+  background-color: rgb(243, 240, 240);
   font-size: 15px;
   font-weight: bold;
   padding: 0 5px;
