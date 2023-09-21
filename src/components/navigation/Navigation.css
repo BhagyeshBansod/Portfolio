@@ -51,7 +51,7 @@
   }
 
   
-/* Media query for max-width 480px */
+/* Media query for max-width 960px */
 @media (max-width: 960px) {
   .nav-right ul {
     display: none; /* Hide the navigation links */
@@ -119,5 +119,12 @@
 
   .nav-right.show-nav ul li {
     margin-bottom: 10px;
+  }
+}
+
+@media (max-width: 500px) {
+  .nav-wrapper {
+    width: 15rem;
+    justify-content: space-between;
   }
 }

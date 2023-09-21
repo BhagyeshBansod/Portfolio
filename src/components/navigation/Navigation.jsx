@@ -55,7 +55,7 @@ const Navigation = () => {
         </div>
         <ul
           style={{
-            color: state.darkMode ? "white" : "",
+            color: state.darkMode ? "black" : "",
           }}
         >
           <Link to="Navigation" spy={true} smooth={true} activeClass="activeClass">

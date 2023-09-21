@@ -37,8 +37,9 @@ const Portfolio = () => {
             src={iNotebook}
             alt=""
           />
+          
           <div>
-            <div className="project-name" > iNotebook </div>
+          <a href="https://inotes-t5ed.onrender.com" target="_blank" rel="noreferrer">  <div className="project-name" > iNotebook </div> </a>
           </div>
         </SwiperSlide>
         

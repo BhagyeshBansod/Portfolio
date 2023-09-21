@@ -19,11 +19,8 @@
 
 .portfolio-slider {
   margin-top: 2rem;
+  border-radius: 19px;
   width: 100%;
-}
-
-.portfolio-slider .swiper-slide {
-  width: 20rem;
 }
 
 .portfolio img {
@@ -37,7 +34,7 @@
 
 .project-name{
   height: 100%;
-  width: 100%;
+  width: 19rem;
   display: flex;
   justify-content: center;
   align-items: center;
